@@ -6,11 +6,12 @@
 
 main {
     background-color: #d9dcd6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(235, 170, 0);
     color: #ffffff;
 }
@@ -21,6 +22,8 @@ header h1 {
 }
 
 header nav {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -64,6 +67,62 @@ a {
     color: rgb(184, 157, 5);
     font-size: 80%;
 }
+
+.container {
+    display:flex;
+    flex: 4;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+}
+
+.container .sidebar-heading {
+    width:20%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.container .about-me-para {
+    width: 80%;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border-left: solid 3px  green; 
+}
+
+.container .display-work {
+    list-style: none;
+    width: 80%;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border-left: solid 3px  green; 
+}
+
+.container .display-work li {
+    padding: 2%;
+    display: inline;
+}
+
+.display-work .card{
+    margin: 2%;
+    padding: 10px;
+    flex: 0 1 45%;
+  }
+  
+  .display-work .card img {
+    width: 100%;
+  }  
+  
+  .display-work #top-project {
+    flex: 1 1 100%;
+  }
+
 
 .contact-icons img {
     height: 20px;
