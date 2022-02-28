@@ -16,7 +16,9 @@ header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(235, 170, 0);
     color: #ffffff;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    /* position: relative; */
 }
 
 
@@ -27,22 +29,22 @@ header h1 {
 
 /* Nav styling - Making it flex  */
 header nav {
+    padding-top: 15px;
+    margin-left: auto;
+}
+
+header nav ul {
     display: flex;
     flex-wrap: wrap; 
-    padding-top: 15px;
-    margin-right: 20px;
-    float:right;
+    justify-content: space-evenly;
+    list-style-type: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
-header nav ul {
-    list-style-type: none;
-}
-
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 header a {
@@ -55,34 +57,31 @@ header a {
 .title-yellow-splash {
     height: 400px;
     width: 100%;
+    display:flex;
+    flex-wrap: wrap;
     margin-bottom: 25px;
     background-image: url("../images/title-yellow-splash.jpg");
     background-size: cover;
     background-position: center;
-    position:relative ;
+    justify-content: flex-start;
+    align-items: center;
 } 
 
+.title-yellow-splash .avatar {
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1; 
+}
+
 .title-yellow-splash #cool-title{
-    position: absolute;
-    left: 20%;
-    top: 40%;
     z-index: 1;
     min-width: 200px;
     padding: 12px;
     font-size: xx-large;
     color: white;
 }
-
-.title-yellow-splash .avatar {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    left: 10%;
-    top: 20%;
-    z-index: 1; 
-}
-
 
 /* Styling of main content leveraging flex tricks  */
 .container {
@@ -97,6 +96,7 @@ header a {
     padding: 2%;
     box-sizing: border-box;
     text-align: right;
+    vertical-align: top;
 }
 
 /* About me style  */
@@ -207,60 +207,55 @@ header a {
 /* Make it responsive using media query for max width 768px */
 @media screen and (max-width: 768px) {
     main,
-    header
-     {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    header nav
-    {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
+    header,
+    .title-yellow-splash,
     .container,
     .display-work,
     .contact-info
     {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:auto;
     }
+
+
+    header nav {
+        margin-left: 0%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
     .container .sidebar-heading {
         width:20%;
         padding: 2%;
         box-sizing: border-box;
-        text-align: center;
     }
   }
   
   /* Make it responsive using media query for max screen width 480px*/
   @media screen and (max-width: 480px) {
     main,
-    header
-    {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    header nav
-    {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
+    header,
+    .title-yellow-splash,
     .container,
     .display-work,
     .contact-info
     {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width:auto;
+    }
+
+    header nav {
+        margin-left: 0%;
+    }
+
+    header nav ul {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .container .sidebar-heading {
