@@ -10,7 +10,6 @@ main {
 }
 
 /* Header Styling */
-
 header {
     padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -18,7 +17,6 @@ header {
     color: #ffffff;
     display: flex;
     flex-wrap: wrap; 
-    /* position: relative; */
 }
 
 
@@ -55,7 +53,7 @@ header a {
 
 /* Title back splash styling  */
 .title-yellow-splash {
-    height: 400px;
+    height: 300px;
     width: 100%;
     display:flex;
     flex-wrap: wrap;
@@ -96,7 +94,7 @@ header a {
     padding: 2%;
     box-sizing: border-box;
     text-align: right;
-    vertical-align: top;
+    vertical-align: 5em;
 }
 
 /* About me style  */
@@ -129,7 +127,7 @@ header a {
 /* Making the list items as cards enabling us to style each card better and introduce pseudo class for clicks and focus  */
 .display-work .card{
     margin: 2%;
-    flex: 0 1 45%;
+    flex: 0 1 46%;
     border: solid 0.35em rgb(126, 217, 233);
     position: relative;
     cursor: pointer;
