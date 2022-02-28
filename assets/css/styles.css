@@ -16,7 +16,9 @@ header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(235, 170, 0);
     color: #ffffff;
+    position: relative;
 }
+
 
 header h1 {
     display: inline-block;
@@ -26,10 +28,10 @@ header h1 {
 /* Nav styling - Making it flex  */
 header nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float:right;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
@@ -62,15 +64,23 @@ header a {
 
 .title-yellow-splash #cool-title{
     position: absolute;
-    right: 24px;
-    bottom: 24px;
+    left: 20%;
+    top: 40%;
     z-index: 1;
     min-width: 200px;
-    border: 1px #aaaaaa solid;
-    background-color: rgb(126, 217, 233);
     padding: 12px;
-    color: rgb(184, 157, 5);
-    font-size: 80%;
+    font-size: xx-large;
+    color: white;
+}
+
+.title-yellow-splash .avatar {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 10%;
+    top: 20%;
+    z-index: 1; 
 }
 
 
@@ -109,7 +119,6 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* box-sizing: border-box; */
     border-left: solid 3px  green; 
 }
 
@@ -193,5 +202,71 @@ header a {
     font-weight: normal;
     text-decoration: underline;
     text-underline-offset: 20%;
-    /* border-bottom:solid 1px black; */
 }
+
+/* Make it responsive using media query for max width 768px */
+@media screen and (max-width: 768px) {
+    main,
+    header
+     {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header nav
+    {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container,
+    .display-work,
+    .contact-info
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .sidebar-heading {
+        width:20%;
+        padding: 2%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+  }
+  
+  /* Make it responsive using media query for max screen width 480px*/
+  @media screen and (max-width: 480px) {
+    main,
+    header
+    {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header nav
+    {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container,
+    .display-work,
+    .contact-info
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .sidebar-heading {
+        width: 20%;
+        padding: 2%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+  }
