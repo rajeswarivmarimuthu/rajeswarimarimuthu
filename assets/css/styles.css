@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -43,6 +44,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 15px;
+    line-height: 2;
 }
 
 header a {
@@ -138,7 +140,7 @@ header a {
   }  
   
   .display-work #top-project {
-    flex: 1 1 100%;
+    flex: 1 0 96%;
   }
 
   /* Handling text over image */
@@ -202,10 +204,11 @@ header a {
     text-underline-offset: 20%;
 }
 
-/* Make it responsive using media query for max width 768px */
+/* Make it responsive using media query for bigger screens */
 @media screen and (max-width: 768px) {
     main,
     header,
+    header nav ul,
     .title-yellow-splash,
     .container,
     .display-work,
@@ -214,29 +217,32 @@ header a {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin: 0%;
       width:auto;
     }
 
-
     header nav {
-        margin-left: 0%;
+        margin-right: auto;
     }
 
-    header nav ul {
-        flex-direction: column;
+    header h1,
+    .title-yellow-splash #cool-title,
+    header nav
+    {
+       text-align: center;
     }
 
-    .container .sidebar-heading {
-        width:20%;
-        padding: 2%;
-        box-sizing: border-box;
-    }
+ .container .sidebar-heading {
+      text-align: center;
+       width: fit-content;
+    } 
   }
   
-  /* Make it responsive using media query for max screen width 480px*/
+  /* Make it responsive using media query for tablets and Phones*/
   @media screen and (max-width: 480px) {
     main,
     header,
+    header nav ul,
     .title-yellow-splash,
     .container,
     .display-work,
@@ -248,18 +254,19 @@ header a {
       width:auto;
     }
 
+    header h1,
+    .title-yellow-splash #cool-title,
+    header nav
+    {
+       text-align: center;
+    }
+
     header nav {
-        margin-left: 0%;
+        margin-right: auto;
     }
 
-    header nav ul {
-        flex-direction: column;
-    }
-
-    .container .sidebar-heading {
-        width: 20%;
-        padding: 2%;
-        box-sizing: border-box;
-        text-align: center;
-    }
+ .container .sidebar-heading {
+      text-align: center;
+       width: fit-content;
+    } 
   }
