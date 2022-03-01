@@ -13,10 +13,10 @@ Hosted  @ https://rajeswarivmarimuthu.github.io/rajeswarimarimuthu/
     - Pseudo classes
 
 # Desktop Homepage 
-![image](/assets/images/homepage-screenshot.png)
+![image](/assets/images/Homepage-screenshot.png)
 
 # Responsive layout on browser
-![image](/assets/images/responsive-while-resizing.png)
+![image](/assets/images/Responsive-while-resizing.png)
 
 # Responsive layout on mobile
 ![image](/assets/images/mobile-responsive-page.png)
