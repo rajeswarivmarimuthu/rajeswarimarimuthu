@@ -206,6 +206,7 @@ header a {
 
 /* Make it responsive using media query for bigger screens */
 @media screen and (max-width: 768px) {
+    body,
     main,
     header,
     header nav ul,
@@ -240,6 +241,7 @@ header a {
   
   /* Make it responsive using media query for tablets and Phones*/
   @media screen and (max-width: 480px) {
+    body,
     main,
     header,
     header nav ul,
