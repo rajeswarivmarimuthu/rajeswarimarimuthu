@@ -126,11 +126,15 @@ header a {
     display: inline;
 }
 
+#resume {
+    color: green;
+}
+
 /* Making the list items as cards enabling us to style each card better and introduce pseudo class for clicks and focus  */
 .display-work .card{
     margin: 2%;
     flex: 0 1 46%;
-    border: solid 0.35em rgb(126, 217, 233);
+    border: solid 0.35em rgb(126, 217, 230);
     position: relative;
     cursor: pointer;
   }
@@ -150,17 +154,17 @@ header a {
     bottom: 8%;
     left: 0%;
     color: black;
-    background-color: rgb(126, 217, 233);
+    background-color: rgb(126, 230, 204);
   }
 
   /* Styling the text on card that would appear on the work exihibit section */
   .display-work .card .text-on-card h3{
-    font-weight: 100;
-    font-size: 14pt;
+    font-weight: 400;
+    font-size: 12pt;
   }
 
   .display-work .card .text-on-card p {
-    font-weight: 50;
+    font-weight: 300;
     font-size: 10pt;
     line-height: 2;
   }
