@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
 }
 
 main {
@@ -11,43 +12,46 @@ main {
 }
 
 /* Header Styling */
-header {
+nav {
     padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(235, 170, 0);
     color: #ffffff;
     display: flex;
     flex-wrap: wrap; 
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 
-header h1 {
+nav h1 {
     display: inline-block;
+    text-align: center;
     font-size: 48px;
 }
 
 /* Nav styling - Making it flex  */
-header nav {
-    padding-top: 15px;
-    margin-left: auto;
-}
-
-header nav ul {
+nav ul {
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-evenly;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 15px;
     line-height: 2;
 }
 
-header a {
+nav a {
     color: #ffffff;
     text-decoration: underline;
     text-underline-offset: 20%;
@@ -59,11 +63,13 @@ header a {
     width: 100%;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
     margin-bottom: 25px;
     background-image: url("../images/title-yellow-splash.jpg");
     background-size: cover;
     background-position: center;
-    justify-content: flex-start;
     align-items: center;
 } 
 
@@ -78,6 +84,7 @@ header a {
 .title-yellow-splash #cool-title{
     z-index: 1;
     min-width: 200px;
+    text-align: center;
     padding: 12px;
     font-size: xx-large;
     color: white;
@@ -86,40 +93,36 @@ header a {
 /* Styling of main content leveraging flex tricks  */
 .container {
     display:flex;
-    flex: 4;
-    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
     align-items: center;
 }
 
 .container .sidebar-heading {
-    width:20%;
     padding: 2%;
     box-sizing: border-box;
-    text-align: right;
-    vertical-align: 5em;
+    width: fit-content;
 }
 
 /* About me style  */
 .container .about-me-para {
-    width: 80%;
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     box-sizing: border-box;
-    border-left: solid 3px  green; 
 }
 
 /* styling exhibit work */
 .container .display-work {
     list-style: none;
-    width: 80%;
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    border-left: solid 3px  green; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container .display-work li {
@@ -130,31 +133,32 @@ header a {
     color: green;
 }
 
+h2 {
+    font-size: 20px;
+}
+
 /* Making the list items as cards enabling us to style each card better and introduce pseudo class for clicks and focus  */
 .display-work .card{
     margin: 2%;
-    flex: 0 1 46%;
-    border: solid 0.35em rgb(126, 217, 230);
+    border: solid 0.35em rgb(126, 217, 204);
+    flex-shrink: 1;
     position: relative;
     cursor: pointer;
   }
-  
-  .display-work .card img {
-    width: 100%;
-  }  
-  
-  .display-work #top-project {
-    flex: 1 0 96%;
+
+  .display-work img {
+    width: 100%
   }
 
   /* Handling text over image */
   .display-work .card .text-on-card {
     padding: 1%;
+    width: auto;
     position: absolute;
     bottom: 8%;
     left: 0%;
     color: black;
-    background-color: rgb(126, 230, 204);
+    background-color: rgb(126, 217, 204);
   }
 
   /* Styling the text on card that would appear on the work exihibit section */
@@ -181,14 +185,14 @@ header a {
 .container .contact-info
  {
     list-style: none;
-    width: 80%;
     margin-bottom: 2%;
     padding: 2%;
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-left: solid 3px  green; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -209,36 +213,113 @@ header a {
 }
 
 /* Make it responsive using media query for Tablets and Mobile phones */
-@media screen and (max-width: 768px), (max-width: 480px) {
-    body,
-    main,
-    header,
-    header nav ul,
-    .title-yellow-splash,
-    .container,
-    .display-work,
-    .contact-info
-    {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0%;
-      width:auto;
+@media screen and (min-width: 992px){
+
+    /* navbar styling */
+    nav {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    header nav {
+    nav h1 {
+        display: inline-block;
         margin-right: auto;
+        font-size: 48px;
+    }
+    
+   .nav-links {
+        list-style: none;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        padding: 10px 15px;
     }
 
-    header h1,
-    .title-yellow-splash #cool-title,
-    header nav
-    {
-       text-align: center;
+    /* hero page styling */
+    .title-yellow-splash {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
- .container .sidebar-heading {
-      text-align: center;
-       width: fit-content;
-    } 
+    /* main content styling */
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container .sidebar-heading {
+        width:20%;
+        padding: 2%;
+        box-sizing: border-box;
+        text-align: right;
+        vertical-align: 5em;
+    }
+    
+    /* About me style  */
+    .container .about-me-para {
+        width: 80%;
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-left: solid 3px  green; 
+    }
+    
+    /* styling exhibit work */
+    .container .display-work {
+        list-style: none;
+        width: 80%;
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-left: solid 3px  green; 
+    }
+    
+    /* Making the list items as cards enabling us to style each card better and introduce pseudo class for clicks and focus  */
+    .display-work .card{
+        margin: 2%;
+        flex: 0 1 46%;
+      }
+      
+      .display-work .card img {
+        width: 100%;
+      }  
+      
+      .display-work #top-project {
+        flex: 1 0 96%;
+      }
+    
+    /* Contact Info section */
+    .container .contact-info
+     {
+        list-style: none;
+        width: 80%;
+        margin-bottom: 2%;
+        padding: 2%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        border-left: solid 3px  green; 
+    }
+
   }
