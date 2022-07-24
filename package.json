@@ -1,0 +1,41 @@
+{
+  "name": "personal-profile",
+  "version": "1.0.0",
+  "description": "This is react application to present my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-rajeswarivmarimuthu:rajeswarivmarimuthu/rajeswarimarimuthu.git"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "dotenv": "^16.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "react",
+    "profile"
+  ],
+  "author": "rajeswari marimuthu",
+  "license": "ISC"
+}
