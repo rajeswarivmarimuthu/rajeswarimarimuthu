@@ -1,22 +1,41 @@
 import React from 'react';
+import './styles/Contact.css';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+    <div className="w-100 container">
+      <h3>Contact Page</h3>
+      <form
+            action="https://formspree.io/f/mgedgpnk"
+            method="POST"
+          >
+        <div className="text-input" id="username">
+          <input
+            name="Name"
+            placeholder="Add your name"
+            type="text"
+          />
+        </div>
+        <div className="text-input" id="email">
+          <input
+            name="email"
+            placeholder="Add your email"
+            type = "email"
+          />
+        </div>
+        <div className="text-input" id="comment">
+          <textarea
+            name="Message"
+            placeholder="Enter your text..."
+          ></textarea>
+        </div>
+        
+        <div className="">
+          <button className="btn" type="submit">
+            Submit
+          </button>
+        </div>
+        </form>
+      </div>
   );
 }

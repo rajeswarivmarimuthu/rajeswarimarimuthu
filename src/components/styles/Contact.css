@@ -1,0 +1,36 @@
+
+
+form {
+    /* max-width: 400px; */
+    min-width: 400px;
+  }
+  
+  form h3 {
+    font-size: 150%;
+  }
+  
+  form p {
+    margin: 3% 0;
+  }
+  
+
+.text-input {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .text-input{
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+
+.text-input:hover, 
+select:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+.text-input:placeholder-shown {
+    border-style: dashed;
+  }
+
