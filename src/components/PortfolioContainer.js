@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+
 import NavTabs from './NavTabs';
+import HeroSplash from './HeroSplash'
+import Footer from './Footer';
+
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
-import Footer from './Footer';
+import Resume from './pages/Resume';
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -16,6 +21,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'Work') {
       return <Work />;
     }
+    if (currentPage === 'Resume'){
+      return <Resume />;
+    }
       return <About />;
   };
 
@@ -26,7 +34,7 @@ export default function PortfolioContainer() {
     <div>
       {/* Passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-
+      <HeroSplash/>
       {/* Calling the renderPage method which will return a component  */}
       {renderPage()}
       {/* Footer*/}

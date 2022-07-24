@@ -1,9 +1,11 @@
 import React from 'react';
+import './styles/NavTabs.css'
 
 function NavTabs ({currentPage, handlePageChange}){
     return (
-        <ul className="nav">
-            <li> Rajeswari Marimuthu</li>
+        <div className="navbar">
+        <h1> Rajeswari Marimuthu</h1>
+        <ul className="nav-links">
             <li className="nav-item">
                 <a
                     href="#about"
@@ -34,7 +36,18 @@ function NavTabs ({currentPage, handlePageChange}){
                     Contact
                 </a>
             </li>
+            <li className="nav-item">
+                <a
+                    href="#resume"
+                    onClick={() => handlePageChange('Resume')}
+                    // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                >
+                    Resume
+                </a>
+            </li>
         </ul>
+        </div>
     );
 }
 

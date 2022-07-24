@@ -1,0 +1,39 @@
+.navbar {
+    /* padding: 20px; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 170, 0);
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap; 
+    width: auto;
+}
+
+.navbar h1 {
+    display: inline-block;
+    text-align: left;
+    font-size: 48px;
+    margin: 2rem;
+}
+
+/* Nav styling - Making it flex  */
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap; 
+    width: auto;
+    list-style-type: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 2rem;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 15px;
+    line-height: 2;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}

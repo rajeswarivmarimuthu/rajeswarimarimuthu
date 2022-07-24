@@ -1,0 +1,32 @@
+/* Title back splash styling  */
+.title-yellow-splash {
+    height: 300px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: auto;
+    justify-content: left;
+    margin-bottom: 25px;
+    background-image: url("../../images/title-yellow-splash.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+} 
+
+.avatar {
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1; 
+}
+
+.title-yellow-splash #cool-title{
+    z-index: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 12px;
+    font-size: xx-large;
+    color: white;
+}

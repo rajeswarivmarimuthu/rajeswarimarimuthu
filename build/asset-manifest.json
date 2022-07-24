@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.84487ea8.css",
-    "main.js": "/static/js/main.cd86a28a.js",
+    "main.css": "/static/css/main.4fb75cfa.css",
+    "main.js": "/static/js/main.b28b7e97.js",
+    "static/media/title-yellow-splash.jpg": "/static/media/title-yellow-splash.d2df3dd83209217d4ef9.jpg",
+    "static/media/raji_photo.jpeg": "/static/media/raji_photo.584759d1f43e1d12cde6.jpeg",
     "index.html": "/index.html",
-    "main.84487ea8.css.map": "/static/css/main.84487ea8.css.map",
-    "main.cd86a28a.js.map": "/static/js/main.cd86a28a.js.map"
+    "main.4fb75cfa.css.map": "/static/css/main.4fb75cfa.css.map",
+    "main.b28b7e97.js.map": "/static/js/main.b28b7e97.js.map"
   },
   "entrypoints": [
-    "static/css/main.84487ea8.css",
-    "static/js/main.cd86a28a.js"
+    "static/css/main.4fb75cfa.css",
+    "static/js/main.b28b7e97.js"
   ]
 }
