@@ -6,8 +6,8 @@ import './styles/Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="w-100">
-      <div className="footbar">
+    <footer className="w-100 footbar" >
+
         <ul className="nav-links">
           <li className="nav-item">
             <a href="https://github.com/rajeswarivmarimuthu" target="_blank" rel="noreferrer">
@@ -25,7 +25,6 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
     </footer>
   );
 };
