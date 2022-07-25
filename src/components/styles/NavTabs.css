@@ -11,6 +11,7 @@
 .navbar h1 {
     display: inline-block;
     text-align: left;
+    text-justify:auto;
     font-size: 48px;
     margin: 2rem;
 }

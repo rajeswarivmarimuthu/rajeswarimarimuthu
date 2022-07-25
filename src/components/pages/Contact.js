@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Contact.css';
+import '../styles/Contact.css'
 
 export default function Contact() {
   return (
@@ -9,29 +9,35 @@ export default function Contact() {
             action="https://formspree.io/f/mgedgpnk"
             method="POST"
           >
-        <div className="text-input" id="username">
+        <div className="form-fields" id="username">
+          <label> Requestor Name: </label>
           <input
             name="Name"
             placeholder="Add your name"
             type="text"
+            className="text-input"
           />
         </div>
-        <div className="text-input" id="email">
+        <div className="form-fields" id="email">
+          <label>Email id: </label>
           <input
             name="email"
             placeholder="Add your email"
             type = "email"
+            className="text-input"
           />
         </div>
-        <div className="text-input" id="comment">
+        <div className="form-fields" id="comment">
+          <label>Message:</label>
           <textarea
             name="Message"
             placeholder="Enter your text..."
+            className="text-input"
           ></textarea>
         </div>
         
-        <div className="">
-          <button className="btn" type="submit">
+        <div className="btn-grp">
+          <button className="custom-btn" type="submit">
             Submit
           </button>
         </div>
