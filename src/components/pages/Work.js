@@ -9,9 +9,8 @@ import notestaker from '../../images/note-taker.gif'
 
 export default function Work() {
   return (
-    <div className="w-100 container">  
-            <h2 className="sidebar-heading">Projects Portfolio</h2>
-
+    <div className="w-100 container work-container">  
+            <h3 className="sidebar-heading">Projects Portfolio</h3>
             <ul className="display-work nav-links">
                 <li className="card nav-item"> 
                     <a href="https://knickknacks-ondemand.herokuapp.com/" className="image" target="_blank" rel="noopener noreferrer">

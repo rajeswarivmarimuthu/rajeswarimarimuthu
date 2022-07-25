@@ -3,7 +3,7 @@ import '../styles/Contact.css'
 
 export default function Contact() {
   return (
-    <div className="w-100 container">
+    <div className="w-100 container contact-container">
       <h3>Contact Page</h3>
       <form
             action="https://formspree.io/f/mgedgpnk"

@@ -1,13 +1,13 @@
 import React from 'react';
 import ghlogo from '../images/GitHub_logo.png'
 import lnkinlogo from '../images/linkedin_social media_icon.png'
-import twtlogo from '../images/twitter_logo.png'
+import twtlogo from '../images/Twitter-logo.svg'
 import './styles/Footer.css'
 
 const Footer = () => {
   return (
+    <div className = 'fixed-bottom'>
     <footer className="w-100 footbar" >
-
         <ul className="nav-links">
           <li className="nav-item">
             <a href="https://github.com/rajeswarivmarimuthu" target="_blank" rel="noreferrer">
@@ -25,7 +25,8 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-    </footer>
+      </footer>
+    </div>
   );
 };
 

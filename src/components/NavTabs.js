@@ -3,7 +3,7 @@ import './styles/NavTabs.css'
 
 function NavTabs ({currentPage, handlePageChange}){
     return (
-        <div className="navbar">
+        <div className="navbar sticky-top">
         <h1> Rajeswari Marimuthu</h1>
         <ul className="nav-links">
             <li className="nav-item">

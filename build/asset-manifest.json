@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rajeswarimarimuthu/static/css/main.c462426a.css",
+    "main.js": "/rajeswarimarimuthu/static/js/main.7698a24f.js",
+    "static/media/marvel-character-finder.png": "/rajeswarimarimuthu/static/media/marvel-character-finder.ae61ae2a15dd229ae1ed.png",
+    "static/media/knickknacks_ondemand.png": "/rajeswarimarimuthu/static/media/knickknacks_ondemand.6f119e41d08db683b38c.png",
+    "static/media/title-yellow-splash.jpg": "/rajeswarimarimuthu/static/media/title-yellow-splash.d2df3dd83209217d4ef9.jpg",
+    "static/media/note-taker.gif": "/rajeswarimarimuthu/static/media/note-taker.c15fc1d362835c84aa70.gif",
+    "static/media/weather-dashboard.png": "/rajeswarimarimuthu/static/media/weather-dashboard.82a29e756c1a6ff10a0c.png",
+    "static/media/GitHub_logo.png": "/rajeswarimarimuthu/static/media/GitHub_logo.3941e709a9220e7a5013.png",
+    "static/media/linkedin_social media_icon.png": "/rajeswarimarimuthu/static/media/linkedin_social media_icon.acf8b40d5a18de64233e.png",
+    "static/media/raji_photo.jpeg": "/rajeswarimarimuthu/static/media/raji_photo.584759d1f43e1d12cde6.jpeg",
+    "index.html": "/rajeswarimarimuthu/index.html",
+    "main.c462426a.css.map": "/rajeswarimarimuthu/static/css/main.c462426a.css.map",
+    "main.7698a24f.js.map": "/rajeswarimarimuthu/static/js/main.7698a24f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c462426a.css",
+    "static/js/main.7698a24f.js"
+  ]
+}
