@@ -1,6 +1,9 @@
+// Import necessary internal and external modules  
 import React from 'react';
 import './styles/NavTabs.css'
 
+
+// Creating the navbar  section as separate component
 function NavTabs ({currentPage, handlePageChange}){
     return (
         <div className="navbar sticky-top">

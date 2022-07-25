@@ -1,12 +1,14 @@
+// Import necessary internal and external modules  
 import React from 'react';
 import '../styles/Resume.css';
 
+// Creating the resume section as separate component
 export default function Resume() {
   return (
     <div className="resume-container">
       <h4>
        Download my&nbsp;     
-      <a id='resume' href="./assets/images/Raji-resume.pdf" download rel="noopener noreferrer" target="_blank">
+      <a id='resume' href="../images/Raji-resume.pdf" download rel="noopener noreferrer" target="_blank">
       resume
       </a>
       </h4>

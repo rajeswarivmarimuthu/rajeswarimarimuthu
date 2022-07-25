@@ -1,6 +1,9 @@
+
+// import necessary internal and external modules 
 import React from 'react';
 import '../styles/Contact.css'
 
+//Creating a form component enabling the users to reach out to me! using formspree to get the mail
 export default function Contact() {
   return (
     <div className="w-100 container contact-container">

@@ -1,9 +1,15 @@
+// Import necessary internal and external modules  
 import React from 'react';
+import './styles/Footer.css'
+
+//importing logos as assets
 import ghlogo from '../images/GitHub_logo.png'
 import lnkinlogo from '../images/linkedin_social media_icon.png'
 import twtlogo from '../images/Twitter-logo.svg'
-import './styles/Footer.css'
 
+
+
+// Creating the footer section as separate component
 const Footer = () => {
   return (
     <div className = 'fixed-bottom'>

@@ -1,12 +1,14 @@
+//import necessary iinternal and external modules
 import React from 'react';
 import '../styles/Work.css'
 
+//importing the pictures from the library
 import knickknack from '../../images/knickknacks_ondemand.png'
 import marvelfinder from '../../images/marvel-character-finder.png'
 import weatherdashboard from '../../images/weather-dashboard.png'
 import notestaker from '../../images/note-taker.gif'
 
-
+//Creating a separate component for portfolio 
 export default function Work() {
   return (
     <div className="w-100 container work-container">  

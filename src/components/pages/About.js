@@ -1,7 +1,8 @@
-import React from 'react';
+// Import necessary internal and external modules  
+import React, { Component } from 'react';
 import '../styles/About.css';
 
-
+// Creating the about section as separate component
 export default function About() {
   return (
     <div className="about-container">
