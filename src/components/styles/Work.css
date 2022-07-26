@@ -15,7 +15,7 @@
 
   /* Handling text over image */
   .display-work .card .text-on-card {
-    padding: 1%;
+    padding: 0.1em;
     width: auto;
     position: absolute;
     bottom: 8%;
@@ -25,7 +25,7 @@
   }
 
   /* Styling the text on card that would appear on the work exihibit section */
-  .display-work .card .text-on-card h3{
+  .display-work .card .text-on-card h4{
     font-weight: 400;
     font-size: 12pt;
   }

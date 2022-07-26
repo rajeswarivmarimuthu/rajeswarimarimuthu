@@ -4,7 +4,7 @@
     width: 100%;
     display:flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-direction: column;
     width: auto;
     justify-content: left;
     margin-bottom: 25px;
@@ -29,4 +29,18 @@
     padding: 12px;
     font-size: xx-large;
     color: white;
+}
+
+
+/* Make it responsive using media query for Tablets and Mobile phones */
+@media screen and (min-width: 992px){
+
+.title-yellow-splash {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 }

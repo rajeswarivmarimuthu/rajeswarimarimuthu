@@ -1,16 +1,19 @@
 .navbar {
-    /* padding: 20px; */
+    padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(235, 170, 0);
     color: #ffffff;
     display: flex;
     flex-wrap: wrap; 
+    flex-direction: column;
     width: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar h1 {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     text-justify:auto;
     font-size: 48px;
     margin: 2rem;
@@ -37,4 +40,35 @@
     color: #ffffff;
     text-decoration: underline;
     text-underline-offset: 20%;
+}
+
+
+@media screen and (min-width: 992px){ 
+
+    .navbar {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .navbar h1 {
+        display: inline-block;
+        text-align: left;
+        margin-right: auto;
+        font-size: 48px;
+    }
+    
+   .nav-links {
+        list-style: none;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
 }

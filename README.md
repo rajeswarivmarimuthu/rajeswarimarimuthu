@@ -15,11 +15,8 @@ Hosted  @ https://rajeswarivmarimuthu.github.io/rajeswarimarimuthu/
     - Pseudo classes
 
 
-# Desktop Homepage 
-![image](/assets/images/Homepage-screenshot.png)
-
-# Responsive layout on browser
-![gif](/assets/images/respnsive-while-resizing.gif)
+# Browser
+![gif](./src/images/Portfolio_Walkthrough.gif)
 
 # Responsive layout on mobile
-![gif](/assets/images/mobile-responsive-layout.gif)
+![gif](./src/images/Portfolio_Walkthrough_mobile.gif)
